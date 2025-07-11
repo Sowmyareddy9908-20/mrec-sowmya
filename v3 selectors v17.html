@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Types of selectors</title>
+    <style>
+        div{
+            color: aquamarine;
+            background-color: black;
+        }
+        .second{
+            color: pink;
+            background-color: blueviolet;
+        }
+        #third{
+            color: yellow;
+            background-color: green;
+        }
+        div>p{
+            color: whitesmoke;
+            background-color: darkmagenta;
+        }
+        div p {
+            color: whitesmoke;
+            background-color: darkmagenta;
+        }
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        /* pseudo selector */
+        a :visited{
+            color: aquamarine;
+        }
+        a:active{
+            background-color: purple;
+        }
+        a:hover{
+            background-color: chartreuse;
+        }
+        a:link{
+            color: crimson;
+        }
+        p :first-child{
+            background-color: goldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div class="one">
+        I am one
+    </div>
+    <!--1: element selector  -->
+    <div>hello i am first selector</div>
+    <!-- 2: class selector -->
+    <div class="second">hello i am class selector</div>
+    <!-- 3: ID selector -->
+     <div id="third">hello im ID selector</div>
+     <!-- child selector -->
+      <div>hello im child selector
+        <p>only direct child</p>
+      </div>
+     <div>Lorem, ipsum.</div> 
+
+     <!-- decendent selector -->
+     <div>hello im decendent selector
+     <p>color for everywhere</p>
+
+    <!-- universal selectors-its ssets the padding and margin (*)-->
+    </div>
+     <!-- Pseudo selectors -->
+      <a href="https://www.youtube.com">open youtube</a>
+      <a href="https://www.facebook.com">open facebook</a>
+</body>
+</html>
