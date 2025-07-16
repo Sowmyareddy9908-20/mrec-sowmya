@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity</title>
+    <style>
+        /* the specificity of this selector is 1 */
+        h1{
+            color: pink;
+        }
+        /* the specificity of this selector is 10 */
+        .yellow{
+            color: aqua !important;
+        }
+        /* the specificity of this selector is 10 */
+        h1.cred{
+            color: rgb(242, 236, 248);
+        }
+        /* the specificity of this selector is 10 */
+        .cpurple{
+            color: blanchedalmond;
+        }
+        /* the specificity of this selector is 10 */
+        /* attribute selector */
+        [data-x=a]{
+            background-color: red;
+        } 
+    </style>
+</head>
+<body>
+    <div>
+        <h1 style="color: crimson;" class="yellow cred cpurple" data-x="a">hello welcome to my channel</h1>
+    </div>
+</body>
+</html>
