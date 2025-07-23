@@ -1,0 +1,19 @@
+.container{
+    padding: 10px;
+    height: 1000px;
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+.box{
+    height: 150px;
+    width: 280px;
+    border: 2px solid black;
+    text-align: center;
+    justify-content: center;
+    color: white;
+    background-color: rgb(203, 130, 130);
+    border-radius: 5px;
+}
